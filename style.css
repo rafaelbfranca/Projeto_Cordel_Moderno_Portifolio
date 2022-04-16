@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/*Configurações globais das CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fontfamily1: Verdana, Geneva, Tahoma, sans-serif;
+    --fontfamily2: 'Passion One', cursive;
+    --fontfamily3: 'Sriracha', cursive;
+    --fontsize1: clamp(10px,2vw,20px);
+    --fontsize2: clamp(20px,5vw,50px);
+    --fontsize3: clamp(12px,2vw,24px);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fontfamily1);
+    font-size: var(--fontsize1);
+}
+
+/*----------Configurações do header----------*/
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+header>h1{
+    font-variant: small-caps;
+    font-family: var(--fontfamily2);
+    font-size: var(--fontsize2);
+}
+
+/*----------Configurações do main----------*/
+section{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    line-height: 2em;
+    font-family: var(--fontfamily3);
+    font-size: var(--fontsize3);
+}
+
+section>p{
+    padding: 1em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section.imagem>p{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: clamp(50vw,400px,60vw);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(imagens/background001.jpg);
+}
+
+section#img02{
+    background-image: url(imagens/background002.jpg);
+}
+
+/*----------Configurações do footer----------*/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
